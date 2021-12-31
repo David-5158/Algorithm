@@ -1,7 +1,23 @@
-q = [0, 0]
-truck_weights = [7, 4, 5, 6]
-q.pop(0)
-q.append(truck_weights.pop(0))
-print(q)
-print(truck_weights)
-print(sum(q))
+participant = ["marina", "josipa", "nikola", "vinko", "filipa"]
+completion = ["josipa", "filipa", "marina", "nikola"]
+
+hashDict = {} 
+sumHash = 0
+
+for part in participant: 
+    hashDict[hash(part)] = part 
+    sumHash += hash(part) 
+
+for part in participant: 
+    hashDict[hash(part)] = part 
+    sumHash += hash(part) 
+
+print(hashDict.keys())
+print(hashDict.values())
+print(hashDict.get("josipa"))
+print(hash("filipa"))
+# for comp in completion: 
+#     sumHash -= hash(comp) 
+
+# print(hashDict[sumHash])
+
