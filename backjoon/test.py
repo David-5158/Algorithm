@@ -5,7 +5,8 @@ hashDict = {}
 sumHash = 0
 
 for part in participant: 
-    hashDict[hash(part)] = part 
+    hashDict[hash(part)] = part
+    print(hashDict)
     sumHash += hash(part) 
 
 for part in participant: 
