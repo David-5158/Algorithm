@@ -4,7 +4,18 @@
 # string_sorted = sorted(strings, key = lambda x : x[1])
 # print(string_sorted)
 
-list = [1,2,3,4,5]
+# list = [1,2,3,4,5]
 
-del list[0]
-print(list)
+# del list[0]
+# print(list)
+n = 3
+computers = [[1, 1, 0], [1, 1, 0], [0, 0, 1]]
+visited = [0 for i in range(len(computers))]
+
+for i in range(n):
+    if not visited[i]:
+        BFS(i)
+        answer += 1
+
+
+print(visited)
