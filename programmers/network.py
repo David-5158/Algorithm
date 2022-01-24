@@ -32,3 +32,4 @@ def solution(n, computers):
 
 print(solution(3, [[1, 1, 0], [1, 1, 0], [0, 0, 1]]))
 
+## DFS / BFS 확실히 이해하기 !!!!
