@@ -5,5 +5,5 @@ str_num = [str(_) for _ in numbers]
 
 for i in str_num:
     for j in str_num[]:
-        for k in str
-    for 
+        for k in :
+            ds
