@@ -1,17 +1,17 @@
 import sys
+import heapq
 
 N = int(sys.stdin.readline())
-queue = []
+heap = []
 
 for _ in range(N):
     num = int(sys.stdin.readline())
     if num == 0:
-        if len(queue)==0:
+        if len(heap)==0:
             print(0)
         else:
-            queue.sort(reverse=True)
-            print(queue.pop(0))
+            print(heapq.heappop(heap)[1])
     else:
-        queue.append(num)
+        heapq.heappush(heap, [-num, num])
     
 
