@@ -3,7 +3,7 @@ import sys
 def lonely_integer(a):
     res = 0
     for elem in a:
-        res ^= elem
+        res ^= elem # 비트 연산자 사용??? 이해 필요
     return res
     
 
