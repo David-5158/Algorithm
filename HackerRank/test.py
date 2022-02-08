@@ -1,2 +1,5 @@
-li = [0]*100
-print(li)
+import string
+alphabet = string.ascii_lowercase
+
+
+print(set(alphabet))
