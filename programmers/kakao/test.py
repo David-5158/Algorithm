@@ -15,9 +15,15 @@
     
 # print(key[4])
 
-stack =[]
+# stack =[]
 
-if stack == False:
-    print(1)
-else:
-    print(2)
+# if stack == False:
+#     print(1)
+# else:
+#     print(2)
+from itertools import combinations  
+
+nums = [1,2,3,4]
+cmb = list(combinations(nums,3))
+for i in cmb:
+    print(i)

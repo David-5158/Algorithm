@@ -1,30 +1,24 @@
-# year = int(input("input year: "))
-# is_leap_year = False
-
-# if year % 4 == 0:
-#     if year % 100 == 0:
-#         if year % 400 == 0:
-#             is_leap_year = True
+# def solution(n, words):
+#     answer = []
+#     check = []
+#     number = [ [] for i in range(n)]
+#     for i in range(len(words)-1):
+#         if words[i][-1] != words[i+1][0]:
+#            answer.append(i%n)
+#     for j, word in enumerate(words):
+#         number[j%n].append(word)
+#         if word in check:
+#             answer.append((j+1)//n)
 #         else:
-#             is_leap_year = False
-#     else:
-#         is_leap_year = True
-# else:
-#     is_leap_year = False
+#             check.append(word)
+#             print(check)
 
-# print(is_leap_year)
+#     return answer
 
+arr = ["abc","texd"]
+word = "text"
 
-# while True:
-#     year = int(input("input year: "))
-#     is_leap_year = False
-
-#     if(year%4==0 and year%100 !=0 or year%400==0):
-#         is_leap_year = True
-#     print(is_leap_year)
-
-
-if(False and True or False):
-    print(True)
+if word[0] == arr[-1][-1]:
+    print("true")
 else:
-    print(False)
+    print("fuck")
